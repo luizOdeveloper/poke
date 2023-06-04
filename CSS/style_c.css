@@ -1,0 +1,661 @@
+    /* global */
+
+    *, html, body {
+        scroll-behavior: smooth !important;
+    }  
+
+    *{
+        font-family: 'Poppins';
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url("../Font/Poppins-ExtraLight.ttf") format('truetype');
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: 'Poppins-bold';
+        src: url("../Font/Poppins-Light.ttf") format('truetype');
+        font-weight: normal;
+    }
+
+    h1{
+        font-family: 'Poppins-bold';
+    }
+
+    /* auxiliar */
+
+    .center{
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 2%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* navbar */
+
+    header{
+        background-color: #682a11;
+        padding: 20px 0;
+    }
+
+    .logo{
+        color: rgb(255, 255, 255);
+        min-width: 25%;
+    }
+
+    .logo h2{
+        font-family: 'Poppins-bold';
+        font-weight: normal;
+        font-size: 20px;
+    }
+
+    .menu{
+        text-align: right;
+        padding: 6px;
+        width: 75%;
+    }
+
+    .menu a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-right: 30px;
+        transition: 0.4s;
+    }
+
+    .menu a:hover{
+        color: coral;
+    }
+
+    /* banner */
+
+    div.banner{
+        background-image: url("../img/6624516.jpg");
+        min-height: 250px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* menu de compra */
+
+    .menu-compra{
+        box-sizing: border-box;
+        border: 1px solid #0000005b;
+        height: 100%;
+        width: 0;
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow-x: hidden;
+        transition: 0.50s;
+        background-color: white;
+    }
+
+    .menu-compra div.container{
+        display: none;
+        box-sizing: border-box;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-compra div.header-menu{
+        height: 75px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .menu-compra div.header-menu span{
+        width: 75px;
+        background-color: white;
+        padding: 28px;
+    }
+
+    .menu-compra div.header-menu span i{
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .menu-compra div.header-menu h1{
+        padding: 24px 0px;
+        font-size: 20px;
+        width: 78%;
+        color: #682a11;
+        text-align: center;      
+    }
+
+    .menu-compra div.container-compra{
+        box-sizing: border-box;
+        overflow: auto;
+        max-height: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .menu-compra div.box-item{
+        width: 100%;
+        min-height: 425px;
+        background-color: #682a11;
+    }
+
+    .menu-compra div.box-item img{
+        width: 100%;
+        background-color: #682a11;
+    }
+
+    .menu-compra div.desc-item{
+        padding: 15px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .menu-compra div.desc-item h2{
+        color: gray;
+        font-size: 18px;
+    }
+
+    .menu-compra div.desc-item h1{
+        color: #682a11;
+    }
+
+    .menu-compra div.desc-item h3{
+        padding: 10px 0;
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.795);
+    }
+
+    .menu-compra div.desc-item p{
+        padding: 10px 0;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.795);
+    }
+
+    .menu-compra div.especificacoes div.titulo-especificacoes{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        background-color: rgba(128, 128, 128, 0.24);
+    }
+
+    .menu-compra div.especificacoes div.titulo-especificacoes div.txt-especificacoes{
+        width: 75%;
+        color: #682a11;  
+    }
+
+    .menu-compra div.especificacoes div.titulo-especificacoes div.txt-especificacoes h1{
+        font-size: 16px;
+       color: #682a11;  
+    }
+
+    .menu-compra div.especificacoes div.titulo-especificacoes h5{
+        width: 25%;
+        margin-top: 5px;
+        height:35px;
+        padding: 7px 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.849);
+        color: white;
+        font-size: 14px;
+        border-radius: 10px;
+    }
+
+    .menu-compra div.especificacoes div.titulo-especificacoes div.txt-especificacoes p{
+        color: black;
+        font-size: 13PX;
+    }
+
+    .menu-compra div.opcoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-compra div.opcoes h3{
+        width: 100%;
+        font-size: 15px;
+        padding-top: 4px;
+    }
+
+    .menu-compra div.opcoes p{
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    .menu-compra div.content-opcoes{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 15px;
+    }
+
+    .menu-compra div.content-opcoes p{
+        font-size: 14px;
+        color: rgb(41, 41, 41);
+    }
+
+    .menu-compra div.content-opcoes p b{
+        font-family: 'Poppins-bold';
+        color: rgba(0, 0, 0, 0.822);
+        font-size: 15px;
+    }
+
+    .menu-compra div.content-opcoes div.radio-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 115px;
+    }
+
+    .menu-compra div.content-opcoes div.radio-btn input[type=radio]{    
+        height: 25px;
+        width: 30px;
+        border: 1px solid rgba(128, 128, 128, 0.404);
+    }
+
+
+    .menu-compra div.menu-footer{
+        display: block;
+        margin-top: auto;
+        width: 100%;
+        height: 75px;
+        background-color: white;
+    }
+
+    /* main */
+
+    section.main{
+        margin: 0 auto;
+        max-width: 1300px;
+        z-index: 0;
+    }
+
+    div.cardapio{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        top: -50px;
+        background-color: rgb(255, 255, 255);
+        padding: 25px;
+    }
+
+    .cardapio div.center{
+        max-width: 100%;
+        padding: 0 0;
+    }
+
+    .cardapio h3{
+        font-size: 14px;
+        padding: 15px 0;
+        color: green;
+    }
+
+    .cabecalho h3 i{
+        padding: 6px;
+    }
+
+    .cabecalho h3 b{
+        color: gray;
+    }
+
+    .cardapio h3 a{
+        color: gray;
+    }
+
+    .cabecalho h1{
+        color: #682a11;
+        font-size: 20px;
+    }
+
+    .cardapio p{
+        font-size: 12px;
+        padding: 15px 0;
+        color: rgb(105, 105, 105);
+    }
+
+    .cardapio p b{
+        color: rgb(58, 58, 58);
+    }
+
+    .cabecalho{
+        width: 100%;
+
+    }
+
+    .cabecalho button{
+        border: none;
+        cursor: pointer;
+        text-decoration: underline;
+        border-radius: 2px;
+        background-color: rgba(128, 128, 128, 0.158);
+        color: rgb(104, 104, 104);
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .desc{
+        width: 100%;
+        margin-top: 12px;
+        border-top: 1px rgba(128, 128, 128, 0.116) solid;
+    }
+
+    .desc button{
+        width: 100%;
+        color: #682a11;
+        background-color: #682a1149;
+        text-align: center;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .desc button i{
+        padding: 0 6px;
+        font-size: 15px;
+        color: #682a11;
+    }
+
+    .opcoes{
+        position: sticky;
+        top: -20px;
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px rgba(128, 128, 128, 0.445) solid;
+        background-color: rgb(255, 255, 255)
+    }
+
+    .opcoes button{
+        background-color: white;
+        color: gray;
+        border: none;
+        margin-top: 25px;
+        font-size: 18px;
+        padding: 0px 13px;
+    }
+
+    .opcoes button:hover{
+        color: #682a11;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+
+    .promocao{
+        overflow-x: auto;
+    }
+
+    .header-promocao{
+        width: 100%;
+    }
+
+    .header-promocao h1{
+        margin-top: 15px;
+        font-size: 18px;
+        color: #682a11;
+        width: 100%;
+    }
+    .header-promocao p{
+        padding: 2px;
+        margin-bottom: 10px;
+    }
+
+    .promocao p{
+        padding-top: 0;
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+    }
+
+    .promocao div.content-promocao{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .promocao div.single-promocao{
+        width: 400px;
+        height: 450px;
+        border-radius: 5px;
+        border: rgba(128, 128, 128, 0.247) 1px solid;
+        box-shadow: rgba(128, 128, 128, 0.096) 1px 1px 50px;
+        cursor: pointer;
+    }
+
+    .promocao div.single-promocao:hover{
+        border: #682a1141 solid 1px;
+    }
+
+    .promocao div.single-promocao img{
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 65%;
+    }
+
+    .promocao div.r{
+        margin-left: 35px;
+    }
+
+    .single-promocao div.text-promocao h4{
+        color: #682a11;
+        font-size: 14px;
+        padding: 2px 14px;
+    }
+
+    .single-promocao div.text-promocao h2{
+        padding: 5px 14px;
+        color: rgba(0, 128, 0, 0.712);
+        font-size: 16px;
+    }
+
+    .single-promocao div.text-promocao h3{
+        color: gray;
+        font-size: 13px;
+        padding: 0px 14px;
+        text-decoration: line-through;
+    }
+
+    .single-promocao div.text-promocao p{
+        color: gray;
+        font-size: 13px;
+        padding: 0px 14px;
+    }
+
+    .container{
+        margin-top: 40px;
+    }
+
+    .container div.box-item{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.header-itens h1{
+        color: #682a11;
+        font-size: 20px;
+    }
+
+    div.header-itens h1 i{
+        padding: 0 5px;
+        font-size: 16px;
+    }
+    
+    div.header-itens p{
+        padding: 0 5px;
+    }
+
+    div.item{
+        padding: 12px;
+        border: 1px rgba(128, 128, 128, 0.164) solid;
+        border-radius: 5px;
+        width: 595px;
+        margin-top: 12px;
+        display: flex;
+        cursor: pointer;
+        box-shadow: rgba(128, 128, 128, 0.082) 1px 1px 50px;;
+    }
+
+    div.item:hover{
+        border: #682a1141 solid 1px;
+    }
+
+    div.item img{
+        width: 125px;
+        height: 100px;
+        border-radius: 5px;
+    }
+
+    .item div.text-item{
+        padding: 0 6px;
+        width: 76%
+    }
+
+    .item div.text-item h2{
+        font-size: 16px;
+        color: #682a11;
+    }
+
+    .item div.text-item p{
+        padding: 4px 0; 
+        color: gray;
+    }
+
+    .item div.text-item h3{
+        color:rgba(0, 0, 0, 0.747)
+    }
+
+    /* media query */
+
+    @media screen and (max-width: 1000px){
+        .menu{
+            display: none;
+        }
+
+        .logo{
+            width: 70%;
+        }
+
+        .logo h2{
+            font-size: 16px;
+        }
+
+        div.banner{
+            min-height: 150px;
+        }
+
+        div.cardapio{
+            border-radius: 18px 18px 0px 0px;
+        }
+
+        .opcoes{
+            display: flex;
+            overflow-x: auto;
+        }
+
+        .opcoes button{
+            font-size: 14px;
+        }
+
+        /* main */
+
+        .promocao h1{   
+            font-size: 16px;
+        }
+
+        .promocao div.r{
+            margin-left: 10px;
+        }
+
+        .promocao div.single-promocao{
+            width: 150px;
+            height: 300px;
+            border-radius: 5px;
+            border: rgba(128, 128, 128, 0.205) 1px solid;   
+        }
+
+        .promocao div.single-promocao img{
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+            height: 35%;
+        }
+
+        .promocao div.text-promocao p{
+            font-size: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+        }
+
+        .promocao div.text-promocao h2{
+            font-size: 12px;
+        }
+
+        .promocao div.text-promocao h3{
+            font-size: 11px;
+        }
+
+        
+        /* menu de compra */
+
+        .box-item div.item{
+            width:100%;
+        }
+
+        .box-item div.item{
+            border: none;
+            border-top: rgba(128, 128, 128, 0.205) 1px solid;
+            border-bottom: rgba(128, 128, 128, 0.205) 1px solid;
+        }
+
+        .menu-compra div.box-item{
+            width: 100%;
+            min-height: 300px;
+            background-color: #682a11;
+        }
+
+    }
+
+    @media screen and (max-width: 400px){
+        .cabecalho h3, i, a{
+            font-size: 12px;
+        }
+
+        .cabecalho button{
+          width: 100%;
+        }
+
+        .opcoes::-webkit-scrollbar{
+            display: none;
+        }
+
+        .promocao div.content-promocao{
+            width: 300px;
+            padding: 15px;
+        }
+
+        .box-item div.item img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .item div.text-item p{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+        }
+
+        .item div.text-item h3{
+            font-size: 14px;
+        }
+    }

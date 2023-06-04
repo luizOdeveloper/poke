@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    
+    <!--Font Awesome JS script:-->
+    <script src="https://kit.fontawesome.com/0523759b32.js" crossorigin="anonymous" rel="stylesheet"></script>
+
+    <!--Icon link:-->
+    <link rel="icon" type="image/png" href="img/poke-bowl.png">
+
+    <!--Local CSS link-->
+    <link rel="stylesheet" href="CSS/style_c.css">
+
+    <!--local Js Script-->
+    <script src="JS/script.js"></script>
+</head>
+<body id="body">
+   
+    <header>
+
+        <div class="center">
+                <div class="logo">
+                    <h2>Comendo um Pokinho</h2> 
+                </div>
+            <div class="menu">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="index_c.html">
+                    Cardápio
+                </a>
+                <a href="#">
+                    Sobre nós
+                </a>
+
+            </div><!--menu--> 
+
+        </div><!--center-->
+
+    </header>
+
+        <aside id="menuOculto" class="menu-compra">
+            <div class="container" id="container">
+                <div class="header-menu">
+                    <span><i class="fa-solid fa-chevron-left" onclick="fecharmenu()"></i></span>
+                    <h1>Poke Ideia - Santos</h1>
+                </div>
+
+                <div class="container-compra"> 
+
+                    <div class="box-item">
+
+                        <img src="img/menupoke1.jpg">
+
+                    </div>
+
+                    <div class="desc-item">
+                        <h2>Sugestões de Poke</h2>
+                        <h1>Volcano</h1>
+                        <h3>A partir de R$ 49,90</h3>
+
+                        <p>Arroz japonês e mix de folhas, salmão com cream cheese e shimeji, molho tarê, sunomono, cenoura e cream cheese, chips de batata doce e chips de mandioca, cebola roxa, gergelim, gengibre e amêndoa laminada.</p>
+                        
+                    </div><!--descrição do item-->
+
+                    <div class="especificacoes">
+                        <div class="titulo-especificacoes">
+                            <div class="txt-especificacoes">
+                                <h1>Escolha um tamanho</h1>
+                                <p>0 de 1</p>
+                            </div>
+                            <h5>Obrigatório</h5>
+                        </div>
+                    </div><!--especificacoes do menu-->
+
+                    <div class="opcoes"> 
+                        <h3>Tamanho - M (80g de proteína)</h3>
+
+                        <div class="content-opcoes">
+                            <p>Menor que o "G", irado igual! Vocês pediram e nós atendemos. Agora temos o tamanho M, um poke menor - em torno de 350g (pode variar de acordo com os ingredientes escolhidos).</p>
+
+                            <div class="radio-btn">   
+                                <input type="radio">
+                            </div>
+                        </div>
+
+                        <h3>Tamanho - G (100g de proteína)</h3>
+
+                        <div class="content-opcoes">
+                            <p>Nosso tamanho padrão que você já está acostumado a pedir. Peso do prato em torno de 550g (pode variar de acordo com os ingredientes escolhidos).<b>+ R$ 5,00</b></p>
+
+                            <div class="radio-btn">   
+                                <input type="radio">
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="especificacoes">
+                            <div class="titulo-especificacoes">
+                                <div class="txt-especificacoes">
+                                    <h1>Escolha até 2 bases</h1>
+                                    <p>0 de 1</p>
+                                </div>
+                            </div>
+                        </div><!--especificacoes do menu-->
+                    
+                    <div class="opcoes">
+
+                        <h3>Dobro de porteína?</h3>
+                        
+                        <div class="content-opcoes">
+
+                                <p><b>+ R$ 17,00</b></p>
+    
+                                <div class="radio-btn">   
+                                    <input type="radio">
+                                </div>
+                            </div>
+                        </div><!--opções do menu-->
+
+
+
+                <div class="menu-footer">
+                    <p>a</p>
+                </div>
+        </div>
+
+        </aside>
+
+        <section class="main" id="main">
+            <div class="banner"></div><!--banner-->
+                <div class="cardapio">
+                    <div class="center">
+                        <div class="cabecalho">
+                            <h1>Comendo um Pokinho - Santos</h1>
+                            <h3><i class="fa-regular fa-circle-check"></i>Aberto <b>●</b> <a href="#"> Informações sobre a loja</a></h3>
+                            <button>Mostrar taxa e tempo de entrega</button>
+                            <p>Pedido mínimo: <b>R$ 20,00</b></p>
+                        </div><!--cabeçalho-->
+
+                        <div class="desc">
+                            <button><i class="fa-solid fa-tags"></i>Pokes com Desconto! ></button>
+                        </div><!--desconto-->
+
+                        <div class="opcoes">
+                            <a href="#promocao"><button>Promoção</button></a>
+                            <a href="#poke"><button>Poke</button></a>
+                            <a href="#sugestao"><button>Sugestão de Poke</button></a>
+                            <a href="#bebida"><button>Bebidas naturais</button></a>
+                            <a href="#sobremesa"><button>Sobremesas</button></a>
+                        </div><!--opções-->
+
+                            <div class="header-promocao" id="promocao">
+                                <h1>Promoção</h1>
+                                <p>2 opções</p>
+                            </div><!--header-promoção-->
+
+                            <div class="promocao">
+                            <div class="content-promocao">
+                                <div class="single-promocao l">
+                                    <img src="img/poke-promocao1.jpg">
+                                    <div class="text-promocao">
+                                        <h4>Monte seu poke - Ceviche ou Salmão</h4>
+                                        <p>Escolha até duas bases, até 2 proteínas, 1 molho, até 2 topping, até 2 crunches, 1 nut e finalize como desejar.</p>
+                                        <h2>R$33,90</h2>
+                                        <h3>R$52,90</h3>
+                                    </div><!--text-promoção-->
+                                </div><!--single-promoção-->
+
+                                <div class="single-promocao r">
+                                    <img src="img/poke-promocao2.jpg">
+                                    <div class="text-promocao">
+                                        <h4>Combo Havaiano - Ceviche ou Salmão</h4>
+                                        <p>Monte seu poke de Ceviche ou Salmão + água de coco ou suco natural de 300ml</p>
+                                        <h2>R$42,90</h2>
+                                        <h3>R$61,90</h3>
+                                    </div><!--text-promoção-->
+                                </div><!--single-promoção-->
+                            </div><!--content-promoção-->
+                        </div><!--promoção-->
+
+                            <div class="itens" id="poke">
+                                <div class="container">
+                                    <div class="header-itens">
+                                        <h1><i class="fa-solid fa-bowl-rice"></i>Poke</h1>
+                                        <p>2 opções</p>
+                                    </div>
+                                    <div class="box-item">
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Monte seu Poke</h2>
+                                                <p>Escolha até 2 bases, até 2 proteínas, 1 molho, até 3 toppings, até 2 crunches, 1 nut e finalize como desejar.</p>
+                                                <h3>A partir de: R$ 43,90</h3>
+                                            </div>
+                                            <img src="img/poke1.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Monte seu Poke</h2>
+                                                <p>Monte seu poke com duas proteínas + água de coco ou suco natural de 300ml geladinho.</p>
+                                                <h3>A partir de: R$ 52,90</h3>
+                                            </div>
+                                            <img src="img/poke2.jpg">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="container" id="sugestao">
+                                    <div class="header-itens">
+                                        <h1><i class="fa-solid fa-lightbulb"></i>Sugestões de Poke</h1>
+                                        <p>6 opções</p>
+                                    </div>
+
+                                    <div class="box-item">
+                                        <div class="item" onclick="abrirMenu()">
+                                            <div class="text-item">
+                                                <h2>Volcano</h2>
+                                                <p>Arroz japonês e mix de folhas, salmão com cream cheese e shimeji, molho tarê, sunomono, cenoura e cream cheese, chips de batata doce e chips de mandioca, cebola roxa, gergelim, gengibre e amêndoa laminada.</p>
+                                                <h3>A partir de: R$ 44,90</h3>
+                                            </div>
+                                            <img src="img/sugestao1.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Pipeline</h2>
+                                                <p>Espaguete de pupunha, mix folhas, salmão com cream cheese, molho ponzu, tomate cereja, manga, abacate, chips de batata doce, cebola roxa, cebolinha, gergelim e castanha de caju.</p>
+                                                <h3>A partir de: R$ 46,90</h3>
+                                            </div>
+                                            <img src="img/sugestao2.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Maui</h2>
+                                                <p>Arroz gohan, mix de folhas, salmão, molho classico, sunomono, cenoura, kiwi, couve crispy, chips de mandioca, cebola roxa, cebolinha, gergelim e amêndoa laminada.</p>
+                                                <h3>A partir de: R$ 43,90</h3>
+                                            </div>
+                                            <img src="img/sugestao3.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Mana</h2>
+                                                <p>Quinoa, mix de folhas, frango, molho mana, tomate cereja, cenoura, pepino japonês, manga, abacate, chips de mandioca, couve crispy, cebola roxa, cebolinha, gergelim e amendoim.</p>
+                                                <h3>A partir de: R$ 36,90</h3>
+                                            </div>
+                                            <img src="img/sugestao4.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Vegan</h2>
+                                                <p>Espaguete de abobrinha, mix de folhas, shimeji, molho ponzu, tomate cereja, cenoura, sunomono, cebola crispy, chips de mandioca, cebola roxa, cebolinha, gergelim e amêndoa laminada.</p>
+                                                <h3>A partir de: R$ 43,90</h3>
+                                            </div>
+                                            <img src="img/sugestao5.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Jaws</h2>
+                                                <p>Mix de folhas, quinoa, ceviche havaiano, molho ponzu, abacate, tomate cereja, sunomono, chips de batata doce, castanha de caju, cebola roxa, cebolinha e pimenta biquinho.</p>
+                                                <h3>A partir de: R$ 46,90</h3>
+                                            </div>
+                                            <img src="img/sugestao6.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container" id="bebida">
+                                    <div class="header-itens">
+                                        <h1><i class="fa-solid fa-bottle-water"></i>Bebidas</h1>
+                                        <p>4 opções</p>
+                                    </div>
+
+                                    <div class="box-item">
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>água de coco natural</h2>
+                                                <p>300ml</p>
+                                                <h3>R$ 10,00</h3>
+                                            </div>
+                                            <img src="img/bebida1.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Suco natural de abacaxi</h2>
+                                                <p>300ml</p>
+                                                <h3>R$ 10,00</h3>
+                                            </div>
+                                            <img src="img/bebida2.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Suco natural de limão</h2>
+                                                <p>300ml</p>
+                                                <h3>R$ 10,00</h3>
+                                            </div>
+                                            <img src="img/bebida3.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Suco detox</h2>
+                                                <p>300ml</p>
+                                                <h3>R$ 12,00</h3>
+                                            </div>
+                                            <img src="img/bebida4.jpg">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container" id="sobremesa">
+                                    <div class="header-itens">
+                                        <h1><i class="fa-solid fa-ice-cream"></i>Sobremesas</h1>
+                                        <p>2 opções</p>
+                                    </div>
+
+                                    <div class="box-item">
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Banoffe</h2>
+                                                <p>Delicioso banoffe da Mel enviado em uma porção perfeita para sua sobremesa.</p>
+                                                <h3>R$ 12,00</h3>
+                                            </div>
+                                            <img src="img/sobremesa1.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <div class="text-item">
+                                                <h2>Abacaxi com raspas de limão</h2>
+                                                <p>Porção de abacaxi cortado em cubos finalizado com raspas de limão.</p>
+                                                <h3>R$ 9,00</h3>
+                                            </div>
+                                            <img src="img/sobremesa2.jpg">
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div><!--itens-->
+                    </div><!--center-->
+                </div><!--cardpio-->
+        </section><!--main-->
+    </div>
+</body>
+</html>
